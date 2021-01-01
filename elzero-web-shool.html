@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> New Tags in HTML5</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <link rel="stylesheet" href="elzero-web-shool.css"/>
+    </head>
+    <body>
+        <!-- start header-->
+            <header class="main">
+                <h1>Html5 course</h1>
+            </header>
+        <!--end header--> 
+
+        <!--start navigation-->
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+        <!--end navigation-->
+        <!--start Main-->
+            <main>
+                <p>Welcome to <span>HTML5 course</span>by Osama el zero</p>
+            </main>
+        <!--end Main-->
+        <!--start article-->
+        <div class="post">
+            <article>
+                <header>
+                    <h3>Article 1</h3>
+                    <p>Created by <span>Mariam</span> on <span>27/12/2020</span></p>
+                </header>
+                <section>
+                    <p>This Article No1</p>
+                    <div>
+                        Design : <progress value="7" max="10"></progress><br>
+                        Coding : <progress value="5" max="10"></progress>
+                    </div>
+            </section>
+            </article>
+
+
+            <article>
+                <header>
+                    <h3>Article about using &lt;details&gt;</h3>
+                    <p>Created by <span>Mariam</span> on <span>27/12/2020</span></p>
+                    
+
+                </header>
+            <section>
+                <details>
+                    <summary> Referance</summary>
+                    <ul>
+                        <li>Ref1</li>
+                        <li>Ref2</li>
+                        <li>Ref3</li>
+                    </ul>
+                </details>
+            </section>
+            </article>
+
+
+           
+            <article>
+                <header>
+                    <h3>Article about using &lt;figure&gt;</h3>
+                    <p>Created by <span>Mariam</span> on <span>27/12/2020</span></p>
+
+                </header>
+                <section> 
+                    <p>This code describe the div syntax</p>
+                    <figure>
+                        <figcaption>see below how the code tag works</figcaption>
+                    <code>
+                        &lt;div&gt; this is normal syntax for div&lt;/div&gt;
+                    </code>
+                    </figure>
+                   
+                </section>
+            </article>
+            <article>
+                <header>
+                    <h3>Article about using &lt;figure&gt;</h3>
+                    <p>Created by <span>Mariam</span> on <span>27/12/2020</span></p>
+
+                </header>
+                <section> 
+                    <p>This Article No3</p>
+                    <figure class="img-figure">
+                        
+                    <img src="/image-placeholder-fullscreen-header.jpg" alt="placeholder" title="see website for more info"/>
+                    <figcaption>see below how the img tag works</figcaption>
+                </figure>
+                </section>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Article about using New form input type</h3>
+                    <p>Created by <span>Mariam</span> on <span>27/12/2020</span></p>
+
+                </header>
+                <section> 
+                    <p>This Article No3</p>
+                   <form>
+                       <input type="color" name="color" value="#0000ff" >
+
+                       <input type="range" name="range" min="0" max="10" step="2">
+                       <input type="number" name="number" min="-3" max="10">
+                       <input type="submit" value="change"/>
+                    </form>
+                        
+                    
+                </section>
+            </article>
+            </div>
+        <!--end article-->
+        <!--start sidebar-->
+        <aside>
+            <section class="sec1">
+                <h3>Categories</h3>
+            <ul> 
+                <li>Intro</li>
+                <li>New Tags</li>
+                <li>Semantics</li>
+                <li>Api</li>
+             </ul>
+             </section>
+             <section class="perf">
+                <h3>performance</h3>
+           <div>
+               cpu : <meter 
+                        min="0"
+                        max="10"
+                        value="8"
+                        low="4"
+                        high="9"
+                        optimum="8"    >
+
+                     </meter>
+           </div>
+             </section>
+             <section class="top-member">
+                <h3>Top Members</h3>
+                <ul>
+                    <li>Mariam: 100 points</li>
+                    <li>Mohammad: 80 points</li>
+                    <li>Khadijah: 40 points</li>
+                    <li><bdi>مهاب</bdi> : 10 points</li>
+                </ul>
+             </section>
+             <section>
+                 <h3>Choose your Favourite Browser</h3>
+                 <form>
+                     <input list="browsers"/>
+                     <datalist id="browsers" placeholder="choose here">
+                         <option value="chrome">
+                        <option value="safari">
+                        <option value="firefox"> 
+                         <option value="IE">
+                        
+                     </datalist>
+                     <input type="submit" value="choose">  
+                 </form>
+             </section>
+             <section>
+                 <h3>Calculate your Age in days</h3>
+                 <form oninput="result.value= parseInt(age.value) * parseInt(days.value) + 'days'">
+                     <input type="text" name="age">
+                     <input type="hidden" name="days" value="365"/>
+                     <output name="result"></output>
+                 </form>
+    
+             </section>
+             <section>
+                 <h3>Audio of The day</h3>
+                 <audio controls autoplay loop >
+                     <source src="" type="">
+                 </audio>
+             </section>
+             <section>
+                 <video controls muted autoplay>
+                     <source src="../Screen Recording 2020-12-29 at 8.04.28 PM.mov"/>
+                 </video>
+             </section>
+        </aside>
+        <!--end sidebar-->
+        <div class="clearfix"></div>
+        <!--start footer-->
+            <footer>
+            <p>copyright &copy; All Rights Reseved</p>
+            </footer>
+        <!--end footer-->
+    </body>
+</html>
